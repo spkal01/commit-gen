@@ -16,4 +16,5 @@ echo "## 🤔 LAST UPDATED AT: ${d}" > update.md
 
 git config --local user.email "kalligeross@gmail.com"
 git config --local user.name "spkal01"
+git config --global --add safe.directory /github/workspace
 git commit -am "${arr[$rand]} (at ${d})"
