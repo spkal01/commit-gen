@@ -11,6 +11,7 @@ arr[7]="bot: 👻 Thanks master."
 
 rand=$[$RANDOM % ${#arr[@]}]
 INPUT_DIRECTORY=${INPUT_DIRECTORY:-'.'}
+cd ${INPUT_DIRECTORY}
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 
 echo "## 🤔 LAST UPDATED AT: ${d}" > update.md
