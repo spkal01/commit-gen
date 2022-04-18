@@ -15,7 +15,7 @@ cd ${INPUT_DIRECTORY}
 d=`date '+%Y-%m-%dT%H:%M:%SZ'`
 
 echo "## 🤔 LAST UPDATED AT: ${d}" > update.md
-
+git config --local --add safe.directory /github/workspace
 git config --local user.email "kalligeross@gmail.com"
 git config --local user.name "spkal01"
 git config --local --add safe.directory ${INPUT_DIRECTORY}
